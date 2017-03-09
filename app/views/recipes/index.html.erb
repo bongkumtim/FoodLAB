@@ -1,0 +1,7 @@
+<% @recipes.each do |recipe| %>
+<%= recipe.title %> <br>
+<%= recipe.cook_time %> <br>
+<%= recipe.nutrition %> <br>
+<%= recipe.content %> <br>
+<%= image_tag recipe.image.url(:medium) %> <br>
+<% end %>
